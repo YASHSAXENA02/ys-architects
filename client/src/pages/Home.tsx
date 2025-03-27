@@ -47,14 +47,14 @@ const Home = () => {
               variants={fadeIn("up", 0.5)}
             >
               <Link href="/portfolio">
-                <a className="inline-block bg-accent text-primary px-8 py-3 rounded font-medium transition-all hover:bg-opacity-90 text-center">
+                <div className="inline-block bg-[#C9A227] text-[#333333] px-8 py-3 rounded font-['Poppins',sans-serif] font-medium transition-all hover:bg-opacity-90 text-center cursor-pointer">
                   View Our Work
-                </a>
+                </div>
               </Link>
               <Link href="/contact">
-                <a className="inline-block bg-transparent border-2 border-white text-white px-8 py-3 rounded font-medium transition-all hover:bg-white hover:bg-opacity-10 text-center">
+                <div className="inline-block bg-transparent border-2 border-white text-white px-8 py-3 rounded font-['Poppins',sans-serif] font-medium transition-all hover:bg-white hover:bg-opacity-10 text-center cursor-pointer">
                   Get In Touch
-                </a>
+                </div>
               </Link>
             </motion.div>
           </div>
@@ -66,9 +66,14 @@ const Home = () => {
           initial="hidden"
           animate="visible"
         >
-          <a href="#services" className="inline-block">
+          <button 
+            onClick={() => {
+              document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
+            }}
+            className="inline-block hover:text-[#C9A227] transition-colors cursor-pointer"
+          >
             <ChevronDown className="w-8 h-8" />
-          </a>
+          </button>
         </motion.div>
       </section>
 
@@ -113,9 +118,9 @@ const Home = () => {
 
           <div className="text-center mt-12">
             <Link href="/services">
-              <a className="inline-block bg-primary text-white px-8 py-3 rounded font-medium transition-all hover:bg-primary/90">
+              <div className="inline-block bg-[#333333] text-white px-8 py-3 rounded font-['Poppins',sans-serif] font-medium transition-all hover:bg-[#222222] cursor-pointer">
                 View All Services
-              </a>
+              </div>
             </Link>
           </div>
         </div>
@@ -209,9 +214,9 @@ const Home = () => {
 
           <div className="text-center mt-12">
             <Link href="/portfolio">
-              <a className="inline-block bg-accent text-primary px-8 py-3 rounded font-medium transition-all hover:bg-opacity-90">
+              <div className="inline-block bg-[#C9A227] text-[#333333] px-8 py-3 rounded font-['Poppins',sans-serif] font-medium transition-all hover:bg-opacity-90 cursor-pointer">
                 View All Projects
-              </a>
+              </div>
             </Link>
           </div>
         </div>
@@ -279,9 +284,9 @@ const Home = () => {
             </motion.p>
             <motion.div variants={fadeIn("up", 0.5)}>
               <Link href="/contact">
-                <a className="inline-block bg-accent text-primary px-8 py-3 rounded font-medium transition-all hover:bg-opacity-90">
+                <div className="inline-block bg-[#C9A227] text-[#333333] px-8 py-3 rounded font-['Poppins',sans-serif] font-medium transition-all hover:bg-opacity-90 cursor-pointer">
                   Get In Touch
-                </a>
+                </div>
               </Link>
             </motion.div>
           </motion.div>
