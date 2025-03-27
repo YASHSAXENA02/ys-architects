@@ -6,9 +6,9 @@ interface LogoProps {
 }
 
 const Logo = ({ variant = "dark", className = "" }: LogoProps) => {
-  // Update primary color to match our new theme
-  const primaryColor = variant === "dark" ? "#2D4263" : "#FFFFFF";
-  const accentColor = "#E8C547";
+  // Use the new color palette
+  const primaryColor = variant === "dark" ? "#333333" : "#FFFFFF";
+  const accentColor = "#C9A227"; // Muted Gold
 
   return (
     <Link href="/">
@@ -20,7 +20,7 @@ const Logo = ({ variant = "dark", className = "" }: LogoProps) => {
           </svg>
         </div>
         <div>
-          <h1 className={`font-serif text-xl font-bold ${variant === 'light' ? 'text-white' : 'text-primary'}`}>
+          <h1 className={`font-['Playfair_Display',serif] text-xl font-semibold ${variant === 'light' ? 'text-white' : 'text-[#222222]'}`}>
             YS Architects
           </h1>
         </div>

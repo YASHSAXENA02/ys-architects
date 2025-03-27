@@ -40,20 +40,20 @@ const MobileMenu = ({ isOpen, onClose, links }: MobileMenuProps) => {
     <AnimatePresence>
       {isOpen && (
         <motion.div
-          className="absolute top-full left-0 w-full bg-white shadow-md md:hidden"
+          className="absolute top-full left-0 w-full bg-[#F5F5F5] shadow-md md:hidden"
           initial="closed"
           animate="open"
           exit="closed"
           variants={menuVariants}
         >
-          <div className="container mx-auto px-4 py-3 flex flex-col space-y-3">
+          <div className="container mx-auto py-3 flex flex-col space-y-3">
             {links.map((link) => (
               <Link key={link.href} href={link.href}>
                 <div
-                  className={`py-2 px-4 rounded font-medium cursor-pointer ${
+                  className={`py-2 px-4 rounded font-['Poppins',sans-serif] uppercase tracking-wide cursor-pointer ${
                     isActive(link.href)
-                      ? "bg-neutral text-accent"
-                      : "hover:bg-neutral text-primary"
+                      ? "bg-[#EAEAEA] text-[#C9A227]"
+                      : "hover:bg-[#EAEAEA] text-[#333333]"
                   }`}
                   onClick={onClose}
                 >

@@ -38,25 +38,25 @@ const Navbar = () => {
 
   return (
     <header
-      className={`fixed w-full top-0 z-50 bg-white bg-opacity-95 backdrop-blur-sm transition-all duration-300 ${
+      className={`fixed w-full top-0 z-50 bg-[#F5F5F5] bg-opacity-95 backdrop-blur-sm transition-all duration-300 ${
         isScrolled ? "py-2 shadow-md" : "py-4"
       }`}
     >
-      <div className="container mx-auto px-4 flex justify-between items-center">
+      <div className="container mx-auto flex justify-between items-center">
         <Logo />
 
         <nav className="hidden md:flex space-x-8">
           {navLinks.map((link) => (
             <Link key={link.href} href={link.href}>
               <div
-                className={`nav-link py-2 font-medium relative cursor-pointer ${
-                  isActive(link.href) ? "text-accent" : "text-primary"
+                className={`nav-link py-2 relative cursor-pointer ${
+                  isActive(link.href) ? "text-accent" : "text-[#333333]"
                 }`}
               >
                 {link.label}
                 {isActive(link.href) && (
                   <motion.div
-                    className="absolute bottom-0 left-0 w-full h-0.5 bg-accent"
+                    className="absolute bottom-0 left-0 w-full h-0.5 bg-[#C9A227]"
                     layoutId="navbar-underline"
                   />
                 )}
@@ -68,7 +68,7 @@ const Navbar = () => {
         <Button
           variant="ghost"
           size="icon"
-          className="md:hidden text-primary"
+          className="md:hidden text-[#333333]"
           onClick={toggleMobileMenu}
         >
           <Menu className="h-6 w-6" />
