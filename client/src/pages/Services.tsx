@@ -208,7 +208,7 @@ const Services = () => {
                 </svg>
               </div>
               <h4 className="font-serif text-xl font-bold mb-4">Historic Preservation</h4>
-              <p className="text-gray-600">
+              <p className="text-[#333333]">
                 Respectful restoration and adaptive reuse of historic buildings, preserving architectural heritage while incorporating modern functionality.
               </p>
             </motion.div>
@@ -233,7 +233,7 @@ const Services = () => {
                 </svg>
               </div>
               <h4 className="font-serif text-xl font-bold mb-4">Parametric Design</h4>
-              <p className="text-gray-600">
+              <p className="text-[#333333]">
                 Using advanced computational techniques to generate complex, data-driven architectural solutions that optimize form, function, and performance.
               </p>
             </motion.div>
@@ -258,7 +258,7 @@ const Services = () => {
                 </svg>
               </div>
               <h4 className="font-serif text-xl font-bold mb-4">Building Performance Analysis</h4>
-              <p className="text-gray-600">
+              <p className="text-[#333333]">
                 Comprehensive assessment of energy efficiency, thermal comfort, and environmental impact to create high-performance buildings that exceed standards.
               </p>
             </motion.div>
@@ -287,9 +287,9 @@ const Services = () => {
             </motion.p>
             <motion.div variants={fadeIn("up", 0.5)}>
               <Link href="/contact">
-                <a className="inline-block bg-accent text-primary px-8 py-3 rounded font-medium transition-all hover:bg-opacity-90">
+                <div className="inline-block bg-[#C9A227] text-[#333333] px-8 py-3 rounded font-['Poppins',sans-serif] font-medium transition-all hover:bg-opacity-90 cursor-pointer">
                   Get In Touch
-                </a>
+                </div>
               </Link>
             </motion.div>
           </motion.div>

@@ -50,7 +50,7 @@ const Navbar = () => {
             <Link key={link.href} href={link.href}>
               <div
                 className={`nav-link py-2 relative cursor-pointer ${
-                  isActive(link.href) ? "text-accent" : "text-[#333333]"
+                  isActive(link.href) ? "text-[#333333] font-bold" : "text-[#333333]"
                 }`}
               >
                 {link.label}

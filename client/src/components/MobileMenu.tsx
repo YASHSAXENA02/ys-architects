@@ -52,7 +52,7 @@ const MobileMenu = ({ isOpen, onClose, links }: MobileMenuProps) => {
                 <div
                   className={`py-2 px-4 rounded font-['Poppins',sans-serif] uppercase tracking-wide cursor-pointer ${
                     isActive(link.href)
-                      ? "bg-[#EAEAEA] text-[#C9A227]"
+                      ? "bg-[#EAEAEA] text-[#C9A227] font-bold"
                       : "hover:bg-[#EAEAEA] text-[#333333]"
                   }`}
                   onClick={onClose}
