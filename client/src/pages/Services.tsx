@@ -194,7 +194,7 @@ const Services = () => {
             >
               <div className="w-14 h-14 bg-neutral rounded-full flex items-center justify-center mb-6">
                 <svg
-                  className="h-7 w-7 text-accent"
+                  className="h-7 w-7 text-[#C9A227]"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -219,7 +219,7 @@ const Services = () => {
             >
               <div className="w-14 h-14 bg-neutral rounded-full flex items-center justify-center mb-6">
                 <svg
-                  className="h-7 w-7 text-accent"
+                  className="h-7 w-7 text-[#C9A227]"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -244,7 +244,7 @@ const Services = () => {
             >
               <div className="w-14 h-14 bg-neutral rounded-full flex items-center justify-center mb-6">
                 <svg
-                  className="h-7 w-7 text-accent"
+                  className="h-7 w-7 text-[#C9A227]"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"

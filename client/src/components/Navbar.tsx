@@ -68,7 +68,7 @@ const Navbar = () => {
         <Button
           variant="ghost"
           size="icon"
-          className="md:hidden text-[#333333]"
+          className="md:hidden text-[#333333] not-golden"
           onClick={toggleMobileMenu}
         >
           <Menu className="h-6 w-6" />

@@ -79,6 +79,16 @@
     @apply text-[#C9A227];
   }
   
+  /* Make all SVG icons golden */
+  svg {
+    @apply text-[#C9A227];
+  }
+  
+  /* Except for specific icons we want to keep in their original color */
+  .not-golden svg {
+    @apply text-current;
+  }
+  
   .bg-teal {
     @apply bg-[#2A9D8F];
   }
