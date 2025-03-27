@@ -11,7 +11,7 @@
 
   body {
     /* Light Grey Background */
-    @apply font-['Lato',sans-serif] antialiased bg-[#EAEAEA] text-[#666666];
+    @apply font-['Lato',sans-serif] antialiased bg-[#EAEAEA] text-[#333333];
     font-size: 16px;
     line-height: 1.5;
   }
@@ -45,7 +45,7 @@
   }
   
   p, span, div {
-    @apply text-[#666666];
+    @apply text-[#333333];
   }
   
   /* Navigation & Links */
