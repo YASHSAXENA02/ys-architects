@@ -48,8 +48,8 @@ const Navbar = () => {
         <nav className="hidden md:flex space-x-8">
           {navLinks.map((link) => (
             <Link key={link.href} href={link.href}>
-              <a
-                className={`nav-link py-2 font-medium relative ${
+              <div
+                className={`nav-link py-2 font-medium relative cursor-pointer ${
                   isActive(link.href) ? "text-accent" : "text-primary"
                 }`}
               >
@@ -60,7 +60,7 @@ const Navbar = () => {
                     layoutId="navbar-underline"
                   />
                 )}
-              </a>
+              </div>
             </Link>
           ))}
         </nav>

@@ -2,15 +2,17 @@ import { Link } from "wouter";
 
 interface LogoProps {
   variant?: "dark" | "light";
+  className?: string;
 }
 
-const Logo = ({ variant = "dark" }: LogoProps) => {
-  const primaryColor = variant === "dark" ? "#1A1A1A" : "#FFFFFF";
+const Logo = ({ variant = "dark", className = "" }: LogoProps) => {
+  // Update primary color to match our new theme
+  const primaryColor = variant === "dark" ? "#2D4263" : "#FFFFFF";
   const accentColor = "#E8C547";
 
   return (
     <Link href="/">
-      <a className="flex items-center space-x-2">
+      <div className={`flex items-center space-x-2 cursor-pointer ${className}`}>
         <div className="h-10 w-12 relative">
           <svg viewBox="0 0 100 80" className="h-full w-full">
             <path d={`M10,10 L90,10 L50,70 Z`} fill={primaryColor} />
@@ -22,7 +24,7 @@ const Logo = ({ variant = "dark" }: LogoProps) => {
             YS Architects
           </h1>
         </div>
-      </a>
+      </div>
     </Link>
   );
 };

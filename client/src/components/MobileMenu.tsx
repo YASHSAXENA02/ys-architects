@@ -49,8 +49,8 @@ const MobileMenu = ({ isOpen, onClose, links }: MobileMenuProps) => {
           <div className="container mx-auto px-4 py-3 flex flex-col space-y-3">
             {links.map((link) => (
               <Link key={link.href} href={link.href}>
-                <a
-                  className={`py-2 px-4 rounded font-medium ${
+                <div
+                  className={`py-2 px-4 rounded font-medium cursor-pointer ${
                     isActive(link.href)
                       ? "bg-neutral text-accent"
                       : "hover:bg-neutral text-primary"
@@ -58,7 +58,7 @@ const MobileMenu = ({ isOpen, onClose, links }: MobileMenuProps) => {
                   onClick={onClose}
                 >
                   {link.label}
-                </a>
+                </div>
               </Link>
             ))}
           </div>
