@@ -127,7 +127,7 @@ const Home = () => {
       </section>
 
       {/* Process Section */}
-      <section className="py-20 bg-primary text-white">
+      <section className="py-20 bg-slate-100 text-[#333333]">
         <div className="container mx-auto px-4">
           <motion.div
             className="max-w-4xl mx-auto text-center mb-16"
@@ -140,13 +140,13 @@ const Home = () => {
               How We Work
             </motion.span>
             <motion.h2
-              className="font-serif text-4xl font-bold mt-2 mb-6"
+              className="font-serif text-4xl font-bold mt-2 mb-6 text-[#333333]"
               variants={fadeIn("up", 0.3)}
             >
               Our Design Process
             </motion.h2>
             <motion.div className="w-16 h-1 bg-[#C9A227] mx-auto mb-8" variants={fadeIn("up", 0.4)}></motion.div>
-            <motion.p className="text-lg" variants={fadeIn("up", 0.5)}>
+            <motion.p className="text-lg text-[#333333]" variants={fadeIn("up", 0.5)}>
               Our systematic approach ensures that each project receives the attention it deserves, from initial concept to final execution.
             </motion.p>
           </motion.div>
