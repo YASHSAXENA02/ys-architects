@@ -52,7 +52,7 @@ const Home = () => {
                 </div>
               </Link>
               <Link href="/contact">
-                <div className="inline-block bg-transparent border-2 border-white text-white px-8 py-3 rounded font-['Poppins',sans-serif] font-medium transition-all hover:bg-white hover:bg-opacity-10 text-center cursor-pointer">
+                <div className="inline-block bg-transparent border-2 border-black text-black px-8 py-3 rounded font-['Poppins',sans-serif] font-medium transition-all hover:bg-white hover:bg-opacity-10 text-center cursor-pointer">
                   Get In Touch
                 </div>
               </Link>
@@ -127,7 +127,7 @@ const Home = () => {
       </section>
 
       {/* Process Section */}
-      <section className="py-20 bg-slate-100 text-[#333333]">
+      <section className="py-20 bg-neutral text-[#333333]">
         <div className="container mx-auto px-4">
           <motion.div
             className="max-w-4xl mx-auto text-center mb-16"

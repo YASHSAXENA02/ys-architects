@@ -14,7 +14,7 @@ const About = () => {
             animate="visible"
             variants={staggerContainer}
           >
-            <motion.span className="text-accent font-medium" variants={fadeIn("up", 0.2)}>
+            <motion.span className="text-[#C9A227] font-medium" variants={fadeIn("up", 0.2)}>
               About Us
             </motion.span>
             <motion.h2
@@ -23,7 +23,7 @@ const About = () => {
             >
               Our Architectural Journey
             </motion.h2>
-            <motion.div className="w-16 h-1 bg-accent mx-auto mb-8" variants={fadeIn("up", 0.4)}></motion.div>
+            <motion.div className="w-16 h-1 bg-[#C9A227] mx-auto mb-8" variants={fadeIn("up", 0.4)}></motion.div>
             <motion.p className="text-lg" variants={fadeIn("up", 0.5)}>
               YS Architects was founded with a vision to create spaces that inspire, function flawlessly, and stand the test of time. Our journey has been guided by a commitment to excellence and a passion for transforming environments.
             </motion.p>
@@ -57,19 +57,19 @@ const About = () => {
 
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 text-center">
                 <div>
-                  <p className="text-4xl font-bold text-accent">15+</p>
+                  <p className="text-4xl font-bold text-accent" style={{ color: '#C9A227' }}>15+</p>
                   <p className="text-sm uppercase font-medium mt-2">Years Experience</p>
                 </div>
                 <div>
-                  <p className="text-4xl font-bold text-accent">200+</p>
+                  <p className="text-4xl font-bold text-accent" style={{ color: '#C9A227' }}>200+</p>
                   <p className="text-sm uppercase font-medium mt-2">Projects</p>
                 </div>
                 <div>
-                  <p className="text-4xl font-bold text-accent">25</p>
+                  <p className="text-4xl font-bold text-accent" style={{ color: '#C9A227' }}>25</p>
                   <p className="text-sm uppercase font-medium mt-2">Team Members</p>
                 </div>
                 <div>
-                  <p className="text-4xl font-bold text-accent">18</p>
+                  <p className="text-4xl font-bold text-accent" style={{ color: '#C9A227' }}>18</p>
                   <p className="text-sm uppercase font-medium mt-2">Awards</p>
                 </div>
               </div>
@@ -93,7 +93,7 @@ const About = () => {
             >
               Our Values
             </motion.h3>
-            <motion.div className="w-16 h-1 bg-accent mx-auto mb-12" variants={fadeIn("up", 0.4)}></motion.div>
+            <motion.div className="w-16 h-1 bg-[#C9A227] mx-auto mb-12" variants={fadeIn("up", 0.4)}></motion.div>
 
             <div className="grid md:grid-cols-3 gap-8">
               <motion.div
@@ -106,6 +106,7 @@ const About = () => {
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
+                    style={{ color: '#C9A227' }}
                   >
                     <path
                       strokeLinecap="round"
@@ -131,6 +132,7 @@ const About = () => {
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
+                    style={{ color: '#C9A227' }}
                   >
                     <path
                       strokeLinecap="round"
@@ -156,6 +158,7 @@ const About = () => {
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
+                    style={{ color: '#C9A227' }}
                   >
                     <path
                       strokeLinecap="round"
@@ -190,7 +193,7 @@ const About = () => {
             >
               Our Team
             </motion.h3>
-            <motion.div className="w-16 h-1 bg-accent mx-auto mb-8" variants={fadeIn("up", 0.4)}></motion.div>
+            <motion.div className="w-16 h-1 bg-[#C9A227] mx-auto mb-8" variants={fadeIn("up", 0.4)}></motion.div>
             <motion.p className="text-lg" variants={fadeIn("up", 0.5)}>
               Meet the talented individuals who bring our architectural visions to life. Our diverse team combines creativity, technical expertise, and passion for design.
             </motion.p>
@@ -227,7 +230,7 @@ const About = () => {
             >
               Our Approach
             </motion.h3>
-            <motion.div className="w-16 h-1 bg-accent mx-auto mb-8" variants={fadeIn("up", 0.4)}></motion.div>
+            <motion.div className="w-16 h-1 bg-[#C9A227] mx-auto mb-8" variants={fadeIn("up", 0.4)}></motion.div>
             <motion.p className="text-lg mb-12" variants={fadeIn("up", 0.5)}>
               At YS Architects, we follow a collaborative and client-centered approach that ensures your vision is realized with precision and creativity.
             </motion.p>

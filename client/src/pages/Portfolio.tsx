@@ -32,7 +32,7 @@ const Portfolio = () => {
             animate="visible"
             variants={staggerContainer}
           >
-            <motion.span className="text-accent font-medium" variants={fadeIn("up", 0.2)}>
+            <motion.span className="text-[#C9A227] font-medium" variants={fadeIn("up", 0.2)}>
               Our Work
             </motion.span>
             <motion.h2
@@ -41,7 +41,7 @@ const Portfolio = () => {
             >
               Our Portfolio
             </motion.h2>
-            <motion.div className="w-16 h-1 bg-accent mx-auto mb-8" variants={fadeIn("up", 0.4)}></motion.div>
+            <motion.div className="w-16 h-1 bg-[#C9A227] mx-auto mb-8" variants={fadeIn("up", 0.4)}></motion.div>
             <motion.p className="text-lg" variants={fadeIn("up", 0.5)}>
               Explore our diverse collection of architectural projects spanning residential, commercial, cultural, and public spaces. Each project reflects our commitment to innovative design and exceptional quality.
             </motion.p>
@@ -107,7 +107,7 @@ const Portfolio = () => {
             >
               Our Design Philosophy
             </motion.h3>
-            <motion.div className="w-16 h-1 bg-accent mx-auto mb-8" variants={fadeIn("up", 0.4)}></motion.div>
+            <motion.div className="w-16 h-1 bg-[#C9A227] mx-auto mb-8" variants={fadeIn("up", 0.4)}></motion.div>
             <motion.p className="text-lg" variants={fadeIn("up", 0.5)}>
               Each project in our portfolio reflects our core design principles and commitment to creating spaces that are both beautiful and functional.
             </motion.p>

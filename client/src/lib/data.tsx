@@ -170,7 +170,7 @@ export const allProjects = [
     category: "Cultural",
     location: "Vienna",
     imageUrl:
-      "https://images.unsplash.com/photo-1617400877026-398f08d75a72?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "https://unsplash.com/photos/white-and-black-building-under-blue-sky-during-daytime-eJyVpdXE248",
   },
   {
     title: "Downtown Revitalization",
@@ -230,20 +230,20 @@ export const testimonials = [
 
 export const teamMembers = [
   {
-    name: "Yasmine Stevens",
+    name: "Yash Saxena",
     role: "Founding Partner",
     imageUrl:
       "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
   },
   {
-    name: "Samuel Yang",
-    role: "Founding Partner",
+    name: "Pankaj Kush",
+    role: "Senior Partner",
     imageUrl:
       "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
   },
   {
-    name: "Elena Rodriguez",
-    role: "Design Director",
+    name: "Mohit Srivastav",
+    role: "Design Head",
     imageUrl:
       "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
   },

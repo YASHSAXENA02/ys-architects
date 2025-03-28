@@ -10,7 +10,7 @@ interface TestimonialCardProps {
 const TestimonialCard = ({ quote, author, role, avatarUrl }: TestimonialCardProps) => {
   return (
     <motion.div 
-      className="bg-white p-8 rounded-lg shadow-md"
+      className="bg-white p-8 rounded-lg shadow-md w-[400px] h-[400px] flex flex-col"
       whileHover={{ y: -5 }}
       transition={{ duration: 0.2 }}
     >
@@ -23,8 +23,8 @@ const TestimonialCard = ({ quote, author, role, avatarUrl }: TestimonialCardProp
           </span>
         ))}
       </div>
-      <p className="italic mb-6">{quote}</p>
-      <div className="flex items-center">
+      <p className="italic mb-6 text-base flex-grow">{quote}</p>
+      <div className="flex items-center mt-auto">
         <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
           <img src={avatarUrl} alt={author} className="w-full h-full object-cover" />
         </div>
