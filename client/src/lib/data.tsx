@@ -10,42 +10,42 @@ import {
 
 export const services = [
   {
-    icon: <Pencil size={24} className="text-accent" />,
+    icon: <Pencil size={24} className="text-[#C9A227]" />,
     title: "Architectural Design",
     description:
       "Our core service encompasses conceptualization, planning, and detailed design development to transform your vision into buildable reality.",
     features: ["Concept Development", "Schematic Design", "Design Development"],
   },
   {
-    icon: <Building size={24} className="text-accent" />,
+    icon: <Building size={24} className="text-[#C9A227]" />,
     title: "Urban Planning",
     description:
       "We create thoughtful urban solutions that balance aesthetics, functionality, sustainability, and community needs.",
     features: ["Master Planning", "Urban Design", "Community Development"],
   },
   {
-    icon: <Hammer size={24} className="text-accent" />,
+    icon: <Hammer size={24} className="text-[#C9A227]" />,
     title: "Construction Documentation",
     description:
       "Comprehensive and detailed documentation ensuring your project is built according to specifications and industry standards.",
     features: ["Construction Drawings", "Technical Specifications", "Bidding Assistance"],
   },
   {
-    icon: <Leaf size={24} className="text-accent" />,
+    icon: <Leaf size={24} className="text-[#C9A227]" />,
     title: "Sustainable Design",
     description:
       "Environmentally responsible approaches that minimize ecological impact while maximizing resource efficiency.",
     features: ["Green Building Certification", "Energy Efficiency Analysis", "Sustainable Material Selection"],
   },
   {
-    icon: <Sofa size={24} className="text-accent" />,
+    icon: <Sofa size={24} className="text-[#C9A227]" />,
     title: "Interior Design",
     description:
       "Thoughtfully crafted interior spaces that enhance functionality, aesthetics, and the overall user experience.",
     features: ["Space Planning", "Material & Furniture Selection", "Lighting Design"],
   },
   {
-    icon: <Box size={24} className="text-accent" />,
+    icon: <Box size={24} className="text-[#C9A227]" />,
     title: "3D Visualization",
     description:
       "Realistic renderings and virtual experiences that help you visualize your project before construction begins.",
