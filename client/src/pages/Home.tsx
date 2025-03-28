@@ -87,7 +87,7 @@ const Home = () => {
             viewport={{ once: true, amount: 0.3 }}
             variants={staggerContainer}
           >
-            <motion.span className="text-accent font-medium" variants={fadeIn("up", 0.2)}>
+            <motion.span className="text-[#C9A227] font-medium" variants={fadeIn("up", 0.2)}>
               What We Do
             </motion.span>
             <motion.h2
@@ -96,7 +96,7 @@ const Home = () => {
             >
               Our Services
             </motion.h2>
-            <motion.div className="w-16 h-1 bg-accent mx-auto mb-8" variants={fadeIn("up", 0.4)}></motion.div>
+            <motion.div className="w-16 h-1 bg-[#C9A227] mx-auto mb-8" variants={fadeIn("up", 0.4)}></motion.div>
             <motion.p className="text-lg" variants={fadeIn("up", 0.5)}>
               We offer comprehensive architectural services tailored to your unique vision and requirements. Our expertise spans from concept to completion, ensuring excellence at every stage.
             </motion.p>
@@ -136,7 +136,7 @@ const Home = () => {
             viewport={{ once: true, amount: 0.3 }}
             variants={staggerContainer}
           >
-            <motion.span className="text-accent font-medium" variants={fadeIn("up", 0.2)}>
+            <motion.span className="text-[#C9A227] font-medium" variants={fadeIn("up", 0.2)}>
               How We Work
             </motion.span>
             <motion.h2
@@ -145,7 +145,7 @@ const Home = () => {
             >
               Our Design Process
             </motion.h2>
-            <motion.div className="w-16 h-1 bg-accent mx-auto mb-8" variants={fadeIn("up", 0.4)}></motion.div>
+            <motion.div className="w-16 h-1 bg-[#C9A227] mx-auto mb-8" variants={fadeIn("up", 0.4)}></motion.div>
             <motion.p className="text-lg" variants={fadeIn("up", 0.5)}>
               Our systematic approach ensures that each project receives the attention it deserves, from initial concept to final execution.
             </motion.p>
@@ -183,7 +183,7 @@ const Home = () => {
             viewport={{ once: true, amount: 0.3 }}
             variants={staggerContainer}
           >
-            <motion.span className="text-accent font-medium" variants={fadeIn("up", 0.2)}>
+            <motion.span className="text-[#C9A227] font-medium" variants={fadeIn("up", 0.2)}>
               Our Work
             </motion.span>
             <motion.h2
@@ -192,7 +192,7 @@ const Home = () => {
             >
               Featured Projects
             </motion.h2>
-            <motion.div className="w-16 h-1 bg-accent mx-auto mb-8" variants={fadeIn("up", 0.4)}></motion.div>
+            <motion.div className="w-16 h-1 bg-[#C9A227] mx-auto mb-8" variants={fadeIn("up", 0.4)}></motion.div>
             <motion.p className="text-lg" variants={fadeIn("up", 0.5)}>
               Explore our diverse portfolio of architectural projects spanning residential, commercial, cultural, and public spaces.
             </motion.p>
@@ -232,7 +232,7 @@ const Home = () => {
             viewport={{ once: true, amount: 0.3 }}
             variants={staggerContainer}
           >
-            <motion.span className="text-accent font-medium" variants={fadeIn("up", 0.2)}>
+            <motion.span className="text-[#C9A227] font-medium" variants={fadeIn("up", 0.2)}>
               Client Feedback
             </motion.span>
             <motion.h2
@@ -241,7 +241,7 @@ const Home = () => {
             >
               What Our Clients Say
             </motion.h2>
-            <motion.div className="w-16 h-1 bg-accent mx-auto mb-8" variants={fadeIn("up", 0.4)}></motion.div>
+            <motion.div className="w-16 h-1 bg-[#C9A227] mx-auto mb-8" variants={fadeIn("up", 0.4)}></motion.div>
             <motion.p className="text-lg" variants={fadeIn("up", 0.5)}>
               We take pride in our collaborative approach and the relationships we build with our clients. Here's what they have to say about working with YS Architects.
             </motion.p>
