@@ -52,7 +52,7 @@ const Home = () => {
                 </div>
               </Link>
               <Link href="/contact">
-                <div className="inline-block bg-transparent border-2 border-black text-black px-8 py-3 rounded font-['Poppins',sans-serif] font-medium transition-all hover:bg-white hover:bg-opacity-10 text-center cursor-pointer">
+              <div className="inline-block bg-[#C9A227] text-[#333333] px-8 py-3 rounded font-['Poppins',sans-serif] font-medium transition-all hover:bg-opacity-90 text-center cursor-pointer">
                   Get In Touch
                 </div>
               </Link>

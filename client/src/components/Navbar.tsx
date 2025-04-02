@@ -1,10 +1,29 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import Logo from "./Logo";
-import MobileMenu from "./MobileMenu";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Menu } from "lucide-react";
+import { Menu, X } from "lucide-react";
+
+const MobileMenu = ({ isOpen, onClose, links }) => {
+  return (
+    <div
+      className={`fixed inset-0 bg-gray-500 bg-opacity-95 p-6 z-50 transform transition-transform duration-300 ease-in-out
+        ${isOpen ? "translate-x-0" : "translate-x-full"}`}
+    >
+      <button className="absolute top-4 right-4 text-white" onClick={onClose}>
+        <X className="h-6 w-6" />
+      </button>
+      <nav className="mt-10 flex flex-col space-y-6">
+        {links.map((link) => (
+          <Link key={link.href} href={link.href} onClick={onClose}>
+            <div className="text-lg font-semibold text-white">{link.label}</div>
+          </Link>
+        ))}
+      </nav>
+    </div>
+  );
+};
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -21,7 +40,7 @@ const Navbar = () => {
   }, []);
 
   const toggleMobileMenu = () => {
-    setMobileMenuOpen(!mobileMenuOpen);
+    setMobileMenuOpen((prev) => !prev);
   };
 
   const navLinks = [
@@ -32,54 +51,36 @@ const Navbar = () => {
     { href: "/contact", label: "Contact" },
   ];
 
-  const isActive = (path: string) => {
-    return location === path;
-  };
-
   return (
     <header
-      className={`fixed w-full top-0 z-50 bg-[#F5F5F5] bg-opacity-95 backdrop-blur-sm transition-all duration-300 ${
-        isScrolled ? "py-2 shadow-md" : "py-4"
-      }`}
+      className={`fixed w-full top-0 z-50 bg-white shadow-lg transition-all duration-300 
+        ${isScrolled ? "py-2 shadow-md" : "py-4"}`}
     >
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="container mx-auto flex justify-between items-center px-4">
         <Logo />
 
+        {/* Desktop Menu */}
         <nav className="hidden md:flex space-x-8">
           {navLinks.map((link) => (
             <Link key={link.href} href={link.href}>
-              <div
-                className={`nav-link py-2 relative cursor-pointer ${
-                  isActive(link.href) ? "text-[#333333] font-bold" : "text-[#333333]"
-                }`}
-              >
-                {link.label}
-                {isActive(link.href) && (
-                  <motion.div
-                    className="absolute bottom-0 left-0 w-full h-0.5 bg-[#C9A227]"
-                    layoutId="navbar-underline"
-                  />
-                )}
-              </div>
+              <div className={`nav-link py-2 cursor-pointer text-gray-800 font-medium`}>{link.label}</div>
             </Link>
           ))}
         </nav>
 
+        {/* Mobile Menu Button */}
         <Button
           variant="ghost"
           size="icon"
-          className="md:hidden text-[#333333] not-golden"
+          className="md:hidden text-gray-800"
           onClick={toggleMobileMenu}
         >
           <Menu className="h-6 w-6" />
         </Button>
       </div>
 
-      <MobileMenu 
-        isOpen={mobileMenuOpen} 
-        onClose={() => setMobileMenuOpen(false)} 
-        links={navLinks}
-      />
+      {/* Mobile Menu */}
+      <MobileMenu isOpen={mobileMenuOpen} onClose={() => setMobileMenuOpen(false)} links={navLinks} />
     </header>
   );
 };
