@@ -40,13 +40,13 @@ const MobileMenu = ({ isOpen, onClose, links }: MobileMenuProps) => {
     <AnimatePresence>
       {isOpen && (
         <motion.div
-          className="absolute top-full left-0 w-full bg-[#F5F5F5] shadow-md md:hidden"
+          className="absolute top-full left-0 w-full bg-[#F5F5F5] shadow-md md:hidden overflow-x-hidden"
           initial="closed"
           animate="open"
           exit="closed"
           variants={menuVariants}
         >
-          <div className="container mx-auto py-3 flex flex-col space-y-3">
+          <div className="px-4 py-3 flex flex-col space-y-3">
             {links.map((link) => (
               <Link key={link.href} href={link.href}>
                 <div
