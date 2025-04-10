@@ -12,6 +12,7 @@ import { ThemeProvider } from "@/components/ui/theme-provider";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useEffect } from "react";
+import WhatsAppButton from "./components/WhatsappButton";
 
 function ScrollToTop() {
   const [pathname] = useLocation();
@@ -47,6 +48,7 @@ function App() {
             <Router />
           </main>
           <Footer />
+          <WhatsAppButton />
         </div>
         <Toaster />
       </ThemeProvider>

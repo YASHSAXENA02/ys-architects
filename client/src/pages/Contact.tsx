@@ -77,6 +77,23 @@ const Contact = () => {
                 <div className="flex items-start">
                   <div className="flex-shrink-0 mr-4">
                     <div className="w-12 h-12 bg-neutral rounded-full flex items-center justify-center">
+                      <Clock className="text-xl text-[#C9A227]" />
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="font-bold mb-2">Office Hours</h4>
+                    <p className="text-gray-600">
+                      Monday - Friday: 10:00 AM - 7:00 PM
+                    </p>
+                    <p className="text-gray-600">
+                      Saturday & Sunday: By appointment
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start">
+                  <div className="flex-shrink-0 mr-4">
+                    <div className="w-12 h-12 bg-neutral rounded-full flex items-center justify-center">
                       <Mail className="text-xl text-[#C9A227]" />
                     </div>
                   </div>
@@ -97,21 +114,22 @@ const Contact = () => {
                     <p className="text-gray-600">+91-9999997370</p>
                   </div>
                 </div>
-
                 <div className="flex items-start">
-                  <div className="flex-shrink-0 mr-4">
-                    <div className="w-12 h-12 bg-neutral rounded-full flex items-center justify-center">
-                      <Clock className="text-xl text-[#C9A227]" />
-                    </div>
-                  </div>
+                  <br />
                   <div>
-                    <h4 className="font-bold mb-2">Office Hours</h4>
-                    <p className="text-gray-600">
-                      Monday - Friday: 10:00 AM - 7:00 PM
+                    <p className="text-gray-700 mb-3">
+                      Chat with us directly on WhatsApp for immediate assistance
                     </p>
-                    <p className="text-gray-600">
-                      Saturday & Sunday: By appointment
-                    </p>
+                    <a
+                      aria-label="Chat on WhatsApp"
+                      href="https://wa.me/9999997370"
+                    >
+                      {" "}
+                      <img
+                        alt="Chat on WhatsApp"
+                        src="/WhatsAppButtonGreenMedium.svg"
+                      />
+                    </a>
                   </div>
                 </div>
 

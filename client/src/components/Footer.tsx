@@ -198,6 +198,18 @@ const Footer = () => {
                   +91-9999997370
                 </a>
               </li>
+              <li>
+                <a
+                  aria-label="Chat on WhatsApp"
+                  href="https://wa.me/9999997370"
+                >
+                  {" "}
+                  <img
+                    alt="Chat on WhatsApp"
+                    src="/WhatsAppButtonGreenMedium.svg"
+                  />
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -207,17 +219,7 @@ const Footer = () => {
             &copy; {new Date().getFullYear()} YS Architects. All rights
             reserved.
           </p>
-          <div className="flex space-x-6">
-            <button className="text-white hover:text-[#C9A227] text-sm transition-colors">
-              Privacy Policy
-            </button>
-            <button className="text-white hover:text-[#C9A227] text-sm transition-colors">
-              Terms of Service
-            </button>
-            <button className="text-white hover:text-[#C9A227] text-sm transition-colors">
-              Cookie Policy
-            </button>
-          </div>
+          
         </div>
       </div>
     </footer>
