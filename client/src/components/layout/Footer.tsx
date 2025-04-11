@@ -1,5 +1,4 @@
 import { Link } from "wouter";
-import Logo from "./Logo";
 import { Instagram, Linkedin, Twitter, Pin } from "lucide-react";
 
 const Footer = () => {
@@ -9,7 +8,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div>
             <div className="mb-6">
-              <Logo variant="light" />
+              <p className="text-white text-3xl mb-6 font-['Lato',sans-serif]">YS Architects</p>
             </div>
             <p className="text-white mb-6 font-['Lato',sans-serif]">
               Creating spaces that inspire, function flawlessly, and stand the

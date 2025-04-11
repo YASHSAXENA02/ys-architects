@@ -21,7 +21,7 @@ const TeamMemberCard = ({ name, role, imageUrl }: TeamMemberCardProps) => {
         />
       </motion.div>
       <h4 className="font-serif text-xl font-bold">{name}</h4>
-      <p className="text-accent">{role}</p>
+      <p className="text-black">{role}</p>
     </div>
   );
 };

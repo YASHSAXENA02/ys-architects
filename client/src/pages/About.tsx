@@ -5,7 +5,7 @@ import { fadeIn, staggerContainer } from "@/lib/animations";
 
 const About = () => {
   return (
-    <div className="pt-24">
+    <div className="relative">
       <section className="py-20 bg-neutral">
         <div className="container mx-auto px-4">
           <motion.div

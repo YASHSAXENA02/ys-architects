@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
-import ServiceCard from "@/components/ServiceCard";
-import ProcessStep from "@/components/ProcessStep";
 import { services, processSteps } from "@/lib/data";
 import { fadeIn, staggerContainer } from "@/lib/animations";
 import { Link } from "wouter";
+import ServiceCard from "@/components/ServiceCard";
+import ProcessStep from "@/components/ProcessStep";
 
 const Services = () => {
   return (
-    <div className="pt-24">
+    <div className="relative">
       {/* Services Intro Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">

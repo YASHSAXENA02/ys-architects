@@ -41,3 +41,28 @@ export const insertContactMessageSchema = createInsertSchema(contactMessages).om
 
 export type InsertContactMessage = z.infer<typeof insertContactMessageSchema>;
 export type ContactMessage = typeof contactMessages.$inferSelect;
+
+// Project schema
+export const projects = pgTable("projects", {
+  id: serial("id").primaryKey(),
+  title: text("title").notNull(),
+  category: text("category").notNull(),
+  location: text("location").notNull(),
+  description: text("description").notNull(),
+  featuredImage: text("featured_image").notNull(),
+  images: text("images").array().notNull(),
+  featured: boolean("featured").default(false).notNull(),
+});
+
+export const insertProjectSchema = createInsertSchema(projects).pick({
+  title: true,
+  category: true,
+  location: true,
+  description: true,
+  featuredImage: true,
+  images: true,
+  featured: true,
+});
+
+export type InsertProject = z.infer<typeof insertProjectSchema>;
+export type Project = typeof projects.$inferSelect;

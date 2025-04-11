@@ -3,8 +3,15 @@ import { motion, AnimatePresence } from "framer-motion";
 import ProjectCard from "@/components/ProjectCard";
 import { allProjects } from "@/lib/data";
 import { fadeIn, staggerContainer } from "@/lib/animations";
+import { Link } from "wouter";
 
-type ProjectCategory = "all" | "residential" | "commercial" | "cultural" | "urban" | "educational";
+type ProjectCategory =
+  | "all"
+  | "residential"
+  | "commercial"
+  | "cultural"
+  | "urban"
+  | "educational";
 
 const Portfolio = () => {
   const [activeCategory, setActiveCategory] = useState<ProjectCategory>("all");
@@ -18,12 +25,15 @@ const Portfolio = () => {
     { id: "educational", label: "Educational" },
   ];
 
-  const filteredProjects = activeCategory === "all" 
-    ? allProjects 
-    : allProjects.filter(project => project.category.toLowerCase() === activeCategory);
+  const filteredProjects =
+    activeCategory === "all"
+      ? allProjects
+      : allProjects.filter(
+          (project) => project.category.toLowerCase() === activeCategory
+        );
 
   return (
-    <div className="pt-24">
+    <div className="relative">
       <section className="py-20">
         <div className="container mx-auto px-4">
           <motion.div
@@ -32,7 +42,10 @@ const Portfolio = () => {
             animate="visible"
             variants={staggerContainer}
           >
-            <motion.span className="text-[#C9A227] font-medium" variants={fadeIn("up", 0.2)}>
+            <motion.span
+              className="text-[#C9A227] font-medium"
+              variants={fadeIn("up", 0.2)}
+            >
               Our Work
             </motion.span>
             <motion.h2
@@ -41,9 +54,15 @@ const Portfolio = () => {
             >
               Our Portfolio
             </motion.h2>
-            <motion.div className="w-16 h-1 bg-[#C9A227] mx-auto mb-8" variants={fadeIn("up", 0.4)}></motion.div>
+            <motion.div
+              className="w-16 h-1 bg-[#C9A227] mx-auto mb-8"
+              variants={fadeIn("up", 0.4)}
+            ></motion.div>
             <motion.p className="text-lg" variants={fadeIn("up", 0.5)}>
-              Explore our diverse collection of architectural projects spanning residential, commercial, cultural, and public spaces. Each project reflects our commitment to innovative design and exceptional quality.
+              Explore our diverse collection of architectural projects spanning
+              residential, commercial, cultural, and public spaces. Each project
+              reflects our commitment to innovative design and exceptional
+              quality.
             </motion.p>
           </motion.div>
 
@@ -61,7 +80,9 @@ const Portfolio = () => {
                     ? "bg-accent text-primary"
                     : "bg-neutral text-primary hover:bg-gray-200"
                 } transition-colors`}
-                onClick={() => setActiveCategory(category.id as ProjectCategory)}
+                onClick={() =>
+                  setActiveCategory(category.id as ProjectCategory)
+                }
                 variants={fadeIn("up", 0.3 + index * 0.05)}
               >
                 {category.label}
@@ -107,9 +128,14 @@ const Portfolio = () => {
             >
               Our Design Philosophy
             </motion.h3>
-            <motion.div className="w-16 h-1 bg-[#C9A227] mx-auto mb-8" variants={fadeIn("up", 0.4)}></motion.div>
+            <motion.div
+              className="w-16 h-1 bg-[#C9A227] mx-auto mb-8"
+              variants={fadeIn("up", 0.4)}
+            ></motion.div>
             <motion.p className="text-lg" variants={fadeIn("up", 0.5)}>
-              Each project in our portfolio reflects our core design principles and commitment to creating spaces that are both beautiful and functional.
+              Each project in our portfolio reflects our core design principles
+              and commitment to creating spaces that are both beautiful and
+              functional.
             </motion.p>
           </motion.div>
 
@@ -138,7 +164,8 @@ const Portfolio = () => {
               </div>
               <h4 className="font-serif text-xl font-bold mb-4">Innovation</h4>
               <p className="text-gray-600">
-                We embrace creative thinking and new technologies to push the boundaries of what's possible in architectural design.
+                We embrace creative thinking and new technologies to push the
+                boundaries of what's possible in architectural design.
               </p>
             </motion.div>
 
@@ -158,9 +185,12 @@ const Portfolio = () => {
                   />
                 </svg>
               </div>
-              <h4 className="font-serif text-xl font-bold mb-4">Sustainability</h4>
+              <h4 className="font-serif text-xl font-bold mb-4">
+                Sustainability
+              </h4>
               <p className="text-gray-600">
-                Environmental responsibility is woven into every project, from material selection to energy-efficient systems.
+                Environmental responsibility is woven into every project, from
+                material selection to energy-efficient systems.
               </p>
             </motion.div>
 
@@ -180,9 +210,12 @@ const Portfolio = () => {
                   />
                 </svg>
               </div>
-              <h4 className="font-serif text-xl font-bold mb-4">Functionality</h4>
+              <h4 className="font-serif text-xl font-bold mb-4">
+                Functionality
+              </h4>
               <p className="text-gray-600">
-                We design spaces that not only look beautiful but also enhance the daily experience of those who use them.
+                We design spaces that not only look beautiful but also enhance
+                the daily experience of those who use them.
               </p>
             </motion.div>
           </motion.div>
@@ -205,15 +238,15 @@ const Portfolio = () => {
               Have a Project in Mind?
             </motion.h3>
             <motion.p className="text-lg mb-8" variants={fadeIn("up", 0.4)}>
-              Let's discuss how we can bring your vision to life. Our team is ready to collaborate with you from concept to completion.
+              Let's discuss how we can bring your vision to life. Our team is
+              ready to collaborate with you from concept to completion.
             </motion.p>
             <motion.div variants={fadeIn("up", 0.5)}>
-              <a
-                href="/contact"
-                className="inline-block bg-accent text-primary px-8 py-3 rounded font-medium transition-all hover:bg-opacity-90"
-              >
-                Start a Conversation
-              </a>
+              <Link href="/contact">
+                <div className="inline-block bg-[#C9A227] text-[#333333] px-8 py-3 rounded font-['Poppins',sans-serif] font-medium transition-all hover:bg-opacity-90 cursor-pointer">
+                  Start a Conversation
+                </div>
+              </Link>
             </motion.div>
           </motion.div>
         </div>

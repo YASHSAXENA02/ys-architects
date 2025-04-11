@@ -1,11 +1,19 @@
 import { motion } from "framer-motion";
-import ContactForm from "@/components/ContactForm";
+import ContactForm from "@/components/contact/ContactForm";
 import { fadeIn, staggerContainer } from "@/lib/animations";
-import { MapPin, Mail, Phone, Clock, Instagram, Linkedin, Twitter} from "lucide-react";
+import {
+  MapPin,
+  Mail,
+  Phone,
+  Clock,
+  Instagram,
+  Linkedin,
+  Twitter,
+} from "lucide-react";
 
 const Contact = () => {
   return (
-    <div className="pt-24">
+    <div className="relative">
       <section className="py-20">
         <div className="container mx-auto px-4">
           <motion.div
@@ -179,94 +187,6 @@ const Contact = () => {
               ></iframe>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section className="py-20 bg-neutral">
-        <div className="container mx-auto px-4">
-          <motion.div
-            className="max-w-4xl mx-auto text-center"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
-            variants={staggerContainer}
-          >
-            <motion.h3
-              className="font-serif text-3xl font-bold mb-6"
-              variants={fadeIn("up", 0.3)}
-            >
-              Frequently Asked Questions
-            </motion.h3>
-            <motion.div
-              className="w-16 h-1 bg-accent mx-auto mb-12"
-              variants={fadeIn("up", 0.4)}
-            ></motion.div>
-
-            <div className="text-left space-y-6">
-              <motion.div
-                className="bg-white p-6 rounded-lg shadow-sm"
-                variants={fadeIn("up", 0.5)}
-              >
-                <h4 className="font-bold text-lg mb-2">
-                  What is your typical design process?
-                </h4>
-                <p className="text-gray-600">
-                  Our design process typically includes: initial consultation,
-                  concept development, schematic design, design development,
-                  construction documentation, bidding assistance, and
-                  construction oversight. We tailor this process to each
-                  client's needs.
-                </p>
-              </motion.div>
-
-              <motion.div
-                className="bg-white p-6 rounded-lg shadow-sm"
-                variants={fadeIn("up", 0.6)}
-              >
-                <h4 className="font-bold text-lg mb-2">
-                  How long does a typical project take?
-                </h4>
-                <p className="text-gray-600">
-                  Project timelines vary based on scope and complexity.
-                  Residential projects typically take 6-18 months from concept
-                  to completion, while commercial projects may take 1-3 years.
-                  We'll provide a detailed timeline during our initial
-                  consultation.
-                </p>
-              </motion.div>
-
-              <motion.div
-                className="bg-white p-6 rounded-lg shadow-sm"
-                variants={fadeIn("up", 0.7)}
-              >
-                <h4 className="font-bold text-lg mb-2">
-                  What geographic areas do you serve?
-                </h4>
-                <p className="text-gray-600">
-                  While our main office is in New York, we work on projects
-                  nationwide and have experience with international projects as
-                  well. We leverage technology for remote collaboration when
-                  needed.
-                </p>
-              </motion.div>
-
-              <motion.div
-                className="bg-white p-6 rounded-lg shadow-sm"
-                variants={fadeIn("up", 0.8)}
-              >
-                <h4 className="font-bold text-lg mb-2">
-                  How are your fees structured?
-                </h4>
-                <p className="text-gray-600">
-                  Our fees are typically structured as a percentage of
-                  construction costs, fixed fee, or hourly rate depending on the
-                  project type and scope. We'll discuss fee structures during
-                  our initial consultation to find what works best for your
-                  project.
-                </p>
-              </motion.div>
-            </div>
-          </motion.div>
         </div>
       </section>
     </div>
